@@ -1,1 +1,1 @@
-# campus-flow
+CampusFlow is a smart event discovery platform designed to help students find, evaluate, and participate in campus events more effectively. It addresses the common issue of students missing events despite being interested by offering personalized recommendations, clear event insights, and seamless actions such as registration and calendar integration. The platform focuses on simplifying the event journey - enabling students to discover relevant opportunities, make quick decisions, and take timely action.
