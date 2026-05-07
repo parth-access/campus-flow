@@ -1,9 +1,16 @@
 function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div
+      style={{
+        textAlign: "center",
+        padding: "40px",
+      }}
+    >
+      <h1>CampusFlow</h1>
 
-      <p>Welcome to CampusFlow</p>
+      <p>Discover campus events easily</p>
+
+      <button>Explore Events</button>
     </div>
   );
 }
