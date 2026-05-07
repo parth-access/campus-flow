@@ -1,5 +1,9 @@
 function EventDetails() {
-  return <h1>Event Details Page</h1>;
+  return (
+    <div>
+      <h1>Event Details</h1>
+    </div>
+  );
 }
 
 export default EventDetails;
