@@ -11,22 +11,24 @@ function Explore() {
     <>
       <Navbar />
 
-      <div style={{ padding: "20px" }}>
+      <div className="explore-container">
         <h1>Explore Events</h1>
 
         <SearchBar />
 
         <FilterTabs />
 
-        {events.map((event) => (
-          <EventCard
-            key={event.id}
-            title={event.title}
-            category={event.category}
-            date={event.date}
-            location={event.location}
-          />
-        ))}
+        <div className="events-grid">
+          {events.map((event) => (
+            <EventCard
+              key={event.id}
+              title={event.title}
+              category={event.category}
+              date={event.date}
+              location={event.location}
+            />
+          ))}
+        </div>
       </div>
 
       <Footer />
