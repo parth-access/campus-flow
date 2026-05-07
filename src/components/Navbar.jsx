@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav
@@ -11,12 +13,23 @@ function Navbar() {
     >
       <h2>CampusFlow</h2>
 
-      <div>
-        <button>Home</button>
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+        }}
+      >
+        <Link to="/">
+          <button>Home</button>
+        </Link>
 
-        <button>Explore</button>
+        <Link to="/explore">
+          <button>Explore</button>
+        </Link>
 
-        <button>Saved</button>
+        <Link to="/saved">
+          <button>Saved</button>
+        </Link>
       </div>
     </nav>
   );
