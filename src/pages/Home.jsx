@@ -1,17 +1,26 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 function Home() {
   return (
-    <div
-      style={{
-        textAlign: "center",
-        padding: "40px",
-      }}
-    >
-      <h1>CampusFlow</h1>
+    <>
+      <Navbar />
 
-      <p>Discover campus events easily</p>
+      <div
+        style={{
+          textAlign: "center",
+          padding: "40px",
+        }}
+      >
+        <h1>CampusFlow</h1>
 
-      <button>Explore Events</button>
-    </div>
+        <p>Discover campus events easily</p>
+
+        <button>Explore Events</button>
+      </div>
+
+      <Footer />
+    </>
   );
 }
 
