@@ -6,26 +6,16 @@ function EventCard(props) {
         padding: "20px",
         margin: "20px",
         borderRadius: "10px",
-        backgroundColor: "white",
+        backgroundColor: "#f5f5f5",
       }}
     >
       <h2>{props.title}</h2>
 
-      <p>
-        <strong>Category:</strong> {props.category}
-      </p>
+      <p>Category: {props.category}</p>
 
-      <p>
-        <strong>Date:</strong> {props.date}
-      </p>
+      <p>Date: {props.date}</p>
 
-      <p>
-        <strong>Time:</strong> {props.time}
-      </p>
-
-      <p>
-        <strong>Location:</strong> {props.location}
-      </p>
+      <p>Location: {props.location}</p>
     </div>
   );
 }
