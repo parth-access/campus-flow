@@ -1,17 +1,26 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <nav
       style={{
         display: "flex",
         justifyContent: "space-between",
         padding: "20px",
-        backgroundColor: "#1e1e2f",
-        color: "white",
+        backgroundColor: "#1b1b35",
+        alignItems: "center",
       }}
     >
-      <h2>CampusFlow</h2>
+      <h2
+        style={{
+          color: "#ffffff",
+          margin: "0",
+        }}
+      >
+        CampusFlow
+      </h2>
 
       <div
         style={{
@@ -19,17 +28,15 @@ function Navbar() {
           gap: "10px",
         }}
       >
-        <Link to="/">
-          <button>Home</button>
-        </Link>
+        <button onClick={() => navigate("/")}>Home</button>
 
-        <Link to="/explore">
-          <button>Explore</button>
-        </Link>
+        <button onClick={() => navigate("/explore")}>
+          Explore
+        </button>
 
-        <Link to="/saved">
-          <button>Saved</button>
-        </Link>
+        <button onClick={() => navigate("/saved")}>
+          Saved
+        </button>
       </div>
     </nav>
   );
