@@ -26,6 +26,7 @@ function Explore() {
               category={event.category}
               date={event.date}
               location={event.location}
+              img={event.img}
             />
           ))}
         </div>

@@ -1,15 +1,19 @@
 function saveEvent(event) {
-  localStorage.setItem("savedEvent", JSON.stringify(event));
+  let savedEvents = getSavedEvents();
+
+  savedEvents.push(event);
+
+  localStorage.setItem("savedEvents", JSON.stringify(savedEvents));
 }
 
-function getSavedEvent() {
-  let event = localStorage.getItem("savedEvent");
+function getSavedEvents() {
+  let events = localStorage.getItem("savedEvents");
 
-  if (event) {
-    return JSON.parse(event);
+  if (events) {
+    return JSON.parse(events);
   }
 
-  return null;
+  return [];
 }
 
-export { saveEvent, getSavedEvent };
+export { saveEvent, getSavedEvents };
