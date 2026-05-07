@@ -1,5 +1,9 @@
 function Explore() {
-  return <h1>Explore Page</h1>;
+  return (
+    <div>
+      <h1>Explore Events</h1>
+    </div>
+  );
 }
 
 export default Explore;
