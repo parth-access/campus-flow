@@ -1,13 +1,13 @@
 function FilterTabs() {
   return (
     <div style={{ margin: "20px" }}>
-      <button>All</button>
+      <button style={{ marginRight: "10px" }}>All</button>
 
-      <button>Coding</button>
+      <button style={{ marginRight: "10px" }}>Coding</button>
 
-      <button>Design</button>
+      <button style={{ marginRight: "10px" }}>Design</button>
 
-      <button>Sports</button>
+      <button style={{ marginRight: "10px" }}>Sports</button>
 
       <button>Fest</button>
     </div>
