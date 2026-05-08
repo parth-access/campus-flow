@@ -78,6 +78,85 @@ const events = [
     date: "May 26",
     location: "Learners Arena",
   },
+  {
+  id: 11,
+  title: "Inter College Coding Challenge",
+  category: "Coding",
+  date: "May 28",
+  location: "Computer Lab 2",
+},
+
+{
+  id: 12,
+  title: "Frontend Development Bootcamp",
+  category: "Coding",
+  date: "May 29",
+  location: "Innovation Hall",
+},
+
+{
+  id: 13,
+  title: "Creative Poster Design Contest",
+  category: "Design",
+  date: "May 30",
+  location: "Design Studio",
+},
+
+{
+  id: 14,
+  title: "Figma UI Workshop",
+  category: "Design",
+  date: "June 1",
+  location: "Media Lab",
+},
+
+{
+  id: 15,
+  title: "Cricket Championship",
+  category: "Sports",
+  date: "June 2",
+  location: "College Ground",
+},
+
+{
+  id: 16,
+  title: "Badminton Doubles Tournament",
+  category: "Sports",
+  date: "June 3",
+  location: "Indoor Stadium",
+},
+
+{
+  id: 17,
+  title: "Street Dance Competition",
+  category: "Fest",
+  date: "June 4",
+  location: "Open Stage",
+},
+
+{
+  id: 18,
+  title: "Music Night",
+  category: "Fest",
+  date: "June 5",
+  location: "Main Auditorium",
+},
+
+{
+  id: 19,
+  title: "AI Hackathon",
+  category: "Coding",
+  date: "June 6",
+  location: "AI Research Lab",
+},
+
+{
+  id: 20,
+  title: "3D Design Masterclass",
+  category: "Design",
+  date: "June 7",
+  location: "Creative Hub",
+},
 ];
 
 export default events;

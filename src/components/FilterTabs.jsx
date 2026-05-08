@@ -1,15 +1,37 @@
-function FilterTabs() {
+function FilterTabs({ setCategory }) {
   return (
     <div style={{ margin: "20px" }}>
-      <button style={{ marginRight: "10px" }}>All</button>
+      <button
+        style={{ marginRight: "10px" }}
+        onClick={() => setCategory("All")}
+      >
+        All
+      </button>
 
-      <button style={{ marginRight: "10px" }}>Coding</button>
+      <button
+        style={{ marginRight: "10px" }}
+        onClick={() => setCategory("Coding")}
+      >
+        Coding
+      </button>
 
-      <button style={{ marginRight: "10px" }}>Design</button>
+      <button
+        style={{ marginRight: "10px" }}
+        onClick={() => setCategory("Design")}
+      >
+        Design
+      </button>
 
-      <button style={{ marginRight: "10px" }}>Sports</button>
+      <button
+        style={{ marginRight: "10px" }}
+        onClick={() => setCategory("Sports")}
+      >
+        Sports
+      </button>
 
-      <button>Fest</button>
+      <button onClick={() => setCategory("Fest")}>
+        Fest
+      </button>
     </div>
   );
 }

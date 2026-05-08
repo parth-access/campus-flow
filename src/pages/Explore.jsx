@@ -11,9 +11,7 @@ import FilterTabs from "../components/FilterTabs";
 function Explore() {
   const [search, setSearch] = useState("");
 
-  const filteredEvents = events.filter((event) =>
-    event.title.toLowerCase().includes(search.toLowerCase())
-  );
+  const [category, setCategory] = useState("All");
 
   return (
     <>
@@ -28,18 +26,33 @@ function Explore() {
 
         <SearchBar search={search} setSearch={setSearch} />
 
-        <FilterTabs />
+        <FilterTabs setCategory={setCategory} />
 
         <div className="events-grid">
-          {filteredEvents.map((event) => (
-            <EventCard
-              key={event.id}
-              title={event.title}
-              category={event.category}
-              date={event.date}
-              location={event.location}
-            />
-          ))}
+          {events
+            .filter((event) => {
+              if (category !== "All") {
+                return event.category === category;
+              }
+
+              return true;
+            })
+
+            .filter((event) =>
+              event.title
+                .toLowerCase()
+                .includes(search.toLowerCase())
+            )
+
+            .map((event) => (
+              <EventCard
+                key={event.id}
+                title={event.title}
+                category={event.category}
+                date={event.date}
+                location={event.location}
+              />
+            ))}
         </div>
       </div>
 
